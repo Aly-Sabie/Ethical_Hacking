@@ -198,7 +198,7 @@ void processKill()
 		{
 			threatsleft--;
 			system(("sha256sum "+processPath+"/"+processName+" >>whitelist.txt").c_str());
-			system("uniq whitelist.txt>whitelist.txt");
+			
 		}
 	}
 
