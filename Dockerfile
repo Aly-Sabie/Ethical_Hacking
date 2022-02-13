@@ -14,6 +14,7 @@ RUN apt-get update && apt-get -y install sudo
 RUN echo "y" | sudo apt-get install g++
 # Compiling the program source code
 RUN g++ -o virus.exe MemAllocator.cpp
+RUN g++ -o virus2.exe virus2_hastobeterminated.cpp
 RUN g++ -o scanner.exe scanner.cpp
 
 # Running the virus program
